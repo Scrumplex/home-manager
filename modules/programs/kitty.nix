@@ -54,6 +54,8 @@ let
     '';
   };
 in {
+  meta.maintainers = with maintainers; [ Scrumplex ];
+
   options.programs.kitty = {
     enable = mkEnableOption "Kitty terminal emulator";
 
